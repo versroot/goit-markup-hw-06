@@ -20,12 +20,13 @@
   </head>
 
   <body>
-    <header class="theheader">
+<header class="theheader">
       <div class="index-header container">
         <nav class="index-nav">
-          <a href="./index.html" class="logo link"
+          <a href="./index.html" class="logo-top logo link"
             >Web<span class="logo-studio-header">Studio</span></a
           >
+
           <ul class="nav-menu list">
             <li>
               <a href="./index.html" class="nav-list-item link activepage"
@@ -59,12 +60,114 @@
             </li>
           </ul>
         </address>
+
+
+        <button class="btn-hamburger" data-menu-open>
+          <svg class="hamburger-icon icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
+     
       </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+      <div>
+            <button type="button" class="close-modal" data-menu-close>
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          
+
+            <ul class="nav-menu-mobile list">
+              <li>
+                <a href="./index.html" class="nav-list-item-mobile mobile-active link"
+                  >Studio</a
+                >
+              </li>
+  
+              <li>
+                <a href="./portfolio.html" class="nav-list-item-mobile link"
+                  >Portfolio</a
+                >
+              </li>
+  
+              <li>
+                <a href="" class="nav-list-item-mobile link">Contacts</a>
+              </li>
+            </ul>
+      </div>
+      <div>          <address class="addr-mobile">
+            <ul class="adresse-mobile list">
+
+              <li>
+                <a href="tel:+110001111111" class="phone-mobile link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li>
+                <a href="mailto:info@devstudio.com" class="mail-mobile link"
+                  >info@devstudio.com</a
+                >
+              </li>
+  
+
+            </ul>
+          </address>
+          
+          
+          <ul class="social-list social-list-menu list">
+            <li class="social-list-item">
+              <a class="social-circle team-circle" href="">
+                <svg class="social-team-icon icon" width="16" height="16">
+                  <use
+                    href="./images/icons.svg#icon-instagram-2"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-circle team-circle" href="">
+                <svg class="social-team-icon icon" width="16" height="16">
+                  <use
+                    href="./images/icons.svg#icon-twitter-1"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-circle team-circle" href="">
+                <svg class="social-team-icon icon" width="16" height="16">
+                  <use
+                    href="./images/icons.svg#icon-facebook-1"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-circle team-circle" href="">
+                <svg class="social-team-icon icon" width="16" height="16">
+                  <use
+                    href="./images/icons.svg#icon-linkedin-1"
+                  ></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+
+
+
+
+
+
+
+
+
     </header>
     <main>
-      <section class="solutions">
+<section class="solutions">
         <div class="container">
-          <h1 class="solutions-title">Effective Solutions for Your Business</h1>
+          <h1 class="solutions-title">Effective Solutions For Your Business</h1>
           <button type="button" data-modal-open class="solutions-button">
             Order Service
           </button>
@@ -135,6 +238,7 @@
           <ul class="what-we-do-list list">
             <li class="what-we-do-list-item">
               <img
+              srcset="./images/mac.jpg 1x, ./images/mac@2x.jpg 2x"
                 src="./images/mac.jpg"
                 alt="iMac"
                 width="360"
@@ -143,6 +247,7 @@
             </li>
             <li class="what-we-do-list-item">
               <img
+              srcset="./images/messenger.jpg 1x, ./images/messenger@2x.jpg 2x"
                 src="./images/messenger.jpg"
                 alt="Messenger"
                 width="360"
@@ -151,6 +256,7 @@
             </li>
             <li class="what-we-do-list-item">
               <img
+              srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"
                 src="./images/phone.jpg"
                 alt="Phone and notebook"
                 width="360"
@@ -166,6 +272,7 @@
           <ul class="team-card-list list">
             <li class="team-card">
               <img
+              srcset="./images/guerrero.jpg 1x, ./images/guerrero@2x.jpg 2x"
                 src="./images/guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -213,6 +320,7 @@
             </li>
             <li class="team-card">
               <img
+              srcset="./images/ford.jpg 1x, ./images/ford@2x.jpg 2x"
                 src="./images/ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -260,6 +368,7 @@
             </li>
             <li class="team-card">
               <img
+              srcset="./images/garcia.jpg 1x, ./images/garcia@2x.jpg 2x"
                 src="./images/garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -307,6 +416,7 @@
             </li>
             <li class="team-card">
               <img
+              srcset="./images/wilson.jpg 1x, ./images/wilson.jpg 2x"
                 src="./images/wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -401,8 +511,9 @@
     </main>
     <footer class="bottom">
       <div class="index-footer container">
+        <div class="top-line-bottom-tablet">
         <div class="par1footer">
-          <a href="./index.html" class="logo link"
+          <a href="./index.html" class="logo logo-bottom link"
             >Web<span class="logo-studio-footer">Studio</span></a
           >
           <p class="bottom-text">
@@ -438,6 +549,7 @@
               ></a>
             </li>
           </ul>
+        </div>
         </div>
         <div class="subscribe-footer">
           <p class="footer-title">Subscribe</p>
@@ -537,6 +649,8 @@
 
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
